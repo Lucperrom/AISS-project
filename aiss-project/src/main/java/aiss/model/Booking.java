@@ -2,6 +2,8 @@ package aiss.model;
 
 import java.time.LocalDateTime;
 
+import utiles.Checkers;
+
 public class Booking {
 
 	private Integer id;
@@ -15,7 +17,6 @@ public class Booking {
 	private LocalDateTime fecha;
 	
 	public Booking(Person person, Integer night, Room room, Board board, Integer adult, Integer child) {
-		//Tus muertos
 
 		this.person= person;
 		this.night= night;
@@ -24,11 +25,14 @@ public class Booking {
 		this.adult=adult;
 		this.child=child;
 		this.fecha=LocalDateTime.now();
-<<<<<<< HEAD
 		this.room.setAvailable(false);
-=======
-
->>>>>>> branch 'main' of https://github.com/Lucperrom/AISS-project.git
+	
+	}
+	
+	public void setAvailable() {
+		
+		Checkers.check("Fin de la reserva",LocalDateTime.now()== fecha.plusDays((long) night));
+		this.room.setAvailable(true);
 	}
 		
 	public Person getPerson() {
