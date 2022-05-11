@@ -2,8 +2,6 @@ package aiss.model;
 
 import java.time.LocalDateTime;
 
-import com.google.api.client.util.DateTime;
-
 public class Booking {
 
 	private Integer id;
@@ -25,8 +23,7 @@ public class Booking {
 		this.adult=adult;
 		this.child=child;
 		this.fecha=LocalDateTime.now();
-		
-		while(LocalDate)
+		this.room.setAvailable(false);
 	}
 		
 	public Person getPerson() {
