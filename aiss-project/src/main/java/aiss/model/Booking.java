@@ -17,7 +17,7 @@ public class Booking {
 	private LocalDateTime fecha;
 	
 	public Booking(Person person, Integer night, Room room, Board board, Integer adult, Integer child) {
-		//hola que tal estas?
+		//hola profesor te vigilamos
 		this.person= person;
 		this.night= night;
 		this.room= room;
@@ -25,8 +25,7 @@ public class Booking {
 		this.adult=adult;
 		this.child=child;
 		this.fecha=LocalDateTime.now();
-		
-		while(LocalDate)
+
 	}
 		
 	public Person getPerson() {
