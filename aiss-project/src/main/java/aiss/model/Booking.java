@@ -16,6 +16,7 @@ public class Booking {
 	
 	public Booking(Person person, Integer night, Room room, Board board, Integer adult, Integer child) {
 		//Tus muertos
+
 		this.person= person;
 		this.night= night;
 		this.room= room;
@@ -23,7 +24,11 @@ public class Booking {
 		this.adult=adult;
 		this.child=child;
 		this.fecha=LocalDateTime.now();
+<<<<<<< HEAD
 		this.room.setAvailable(false);
+=======
+
+>>>>>>> branch 'main' of https://github.com/Lucperrom/AISS-project.git
 	}
 		
 	public Person getPerson() {
