@@ -15,7 +15,7 @@ public class Booking {
 	private LocalDateTime fecha;
 	
 	public Booking(Person person, Integer night, Room room, Board board, Integer adult, Integer child) {
-		//hola que tal estas?//Maaaaaaal
+		//Tus muertos
 		this.person= person;
 		this.night= night;
 		this.room= room;
